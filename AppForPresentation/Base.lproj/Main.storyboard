@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="s0D-Pn-Ip1">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="H1M-JU-w8r">
+                                <rect key="frame" x="34" y="262" width="700" height="500"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Les.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="disabled" backgroundImage="Les.png"/>
+                                <state key="selected" backgroundImage="Les.png"/>
+                                <state key="highlighted" backgroundImage="Les.png"/>
+                                <connections>
+                                    <action selector="touchImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7eW-NC-FG8"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pop_logo.png" id="q62-Zn-jjc">
+                                <rect key="frame" x="318" y="70" width="132" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="Dk8-NN-0RL"/>
+                    <connections>
+                        <outlet property="imageView" destination="H1M-JU-w8r" id="b20-x1-yJz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1916" y="335"/>
+        </scene>
+        <!--Popover View Controller-->
+        <scene sceneID="Pzg-ko-JJV">
+            <objects>
+                <viewController id="R1h-QM-3hN" customClass="PopoverViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bpw-km-TPq">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pop_logo.png" id="DhT-ru-mq4">
+                                <rect key="frame" x="318" y="70" width="132" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ya3-OJ-yb9">
+                                <rect key="frame" x="264" y="828" width="240" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Show modal view" backgroundImage="show_button.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="disabled" backgroundImage="show_button.png"/>
+                                <state key="selected" backgroundImage="show_button.png"/>
+                                <state key="highlighted" backgroundImage="show_button.png"/>
+                                <connections>
+                                    <action selector="showModal:" destination="R1h-QM-3hN" eventType="touchUpInside" id="Bcn-li-EbM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="Eup-u4-7LU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sRR-jP-7vI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1916" y="1420"/>
+        </scene>
+        <!--Drag View Controller-->
+        <scene sceneID="owq-8x-UtG">
+            <objects>
+                <viewController id="Zly-HA-ifl" customClass="DragViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aNg-Kf-8m5">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pop_logo.png" id="9TR-IH-eUC">
+                                <rect key="frame" x="318" y="70" width="132" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Les.png" id="0Wn-qq-Abl">
+                                <rect key="frame" x="184" y="382" width="400" height="260"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="rPG-CM-IAt" appends="YES" id="L6A-Kg-O7k"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="tef-9d-aei"/>
+                    <connections>
+                        <outlet property="imageView" destination="0Wn-qq-Abl" id="M4v-a1-vaJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TZg-pT-YyB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="rPG-CM-IAt">
+                    <connections>
+                        <action selector="panGestureChanged:" destination="Zly-HA-ifl" id="Hyq-tB-CUp"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1922" y="2554"/>
+        </scene>
+        <!--Modal View Controller-->
+        <scene sceneID="gRX-Ou-Bgr">
+            <objects>
+                <viewController storyboardIdentifier="ModalViewController" id="fPH-8j-gHI" customClass="ModalViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zrf-Cx-2QT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="400"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Les.png" id="taR-Va-zKE">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="400"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="x94-Xj-Vkn">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="400"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="close:" destination="fPH-8j-gHI" eventType="touchUpInside" id="DnI-L2-tm7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="400"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hxE-4I-6eW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2678" y="1330"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="0Gw-NF-hSQ">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="s0D-Pn-Ip1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="6AV-qt-SbS">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="fZR-P9-cI1"/>
+                        <segue destination="R1h-QM-3hN" kind="relationship" relationship="viewControllers" id="DHH-6j-ZY4"/>
+                        <segue destination="Zly-HA-ifl" kind="relationship" relationship="viewControllers" id="JWj-fe-ckV"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5wD-Wh-WRF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="728" y="747"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Les.png" width="700" height="500"/>
+        <image name="pop_logo.png" width="132" height="55"/>
+        <image name="show_button.png" width="240" height="90"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
